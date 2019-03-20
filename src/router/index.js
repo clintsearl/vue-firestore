@@ -5,6 +5,7 @@ import Dashboard from '@/components/Dashboard'
 import ViewEmployee from '@/components/ViewEmployee'
 import EditEmployee from '@/components/EditEmployee'
 import FireEmployee from '@/components/FireEmployee'
+import HelloWorld from '@/components/HelloWorld'
 Vue.use(Router)
 
 export default new Router({
@@ -34,6 +35,11 @@ export default new Router({
       path: '/fire',
       name: 'fire-employee',
       component: FireEmployee
+    },
+    {
+      path: '/helloworld',
+      name: 'helloworld',
+      component: HelloWorld
     }
   ]
 })

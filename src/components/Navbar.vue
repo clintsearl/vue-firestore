@@ -1,9 +1,14 @@
 <template>
     <nav>
-        <div class="nav-wrapper blue">
-            <div class="container">
-                <router-link to="/" class="brand-logo">Employee Manager</router-link>
+        <nav>
+             <div class="nav-wrapper cyan darken-2">
+                <router-link to="/" class="brand-logo">Employee Database</router-link>
+                <ul id="nav-mobile" class="right hide-on-med-and-down ">
+                    <li><router-link to="/new">New Employee</router-link></li>
+                    <li><router-link to="/fire">Fire Employees</router-link></li>
+                    <li><router-link to="/helloworld">Hello World</router-link></li>
+                </ul>
             </div>
-        </div>  
+        </nav> 
     </nav>
 </template>
