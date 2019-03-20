@@ -8,6 +8,7 @@ import FireEmployee from '@/components/FireEmployee'
 Vue.use(Router)
 
 export default new Router({
+  mode: 'history',
   routes: [
     {
       path: '/',
@@ -20,12 +21,12 @@ export default new Router({
       component: NewEmployee
     },
     {
-      path: '/edit:eployee_id',
+      path: '/edit:employee_id',
       name: 'edit-employee',
       component: EditEmployee
     },
     {
-      path: '/:employee_id',
+      path: '/employee:employee_id',
       name: 'view-employee',
       component: ViewEmployee
     },

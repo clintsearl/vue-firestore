@@ -37,7 +37,7 @@ export default {
         }
     },
     created (){
-        db.collection('employees').get().then(
+        db.collection('employees').orderBy('employee_id', 'asc').get().then(
             querySnapshot => {
                 querySnapshot.forEach(doc => {
                     //you can console.log things here
