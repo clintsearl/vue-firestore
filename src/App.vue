@@ -1,3 +1,6 @@
+// This is a test branch for hosting on firebase
+// 
+
 <template>
   <div id="app">
     <Navbar />
